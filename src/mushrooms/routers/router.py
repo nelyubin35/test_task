@@ -7,7 +7,7 @@ from src.mushrooms.dtos import CreateMushtoomDTO, UpdateMushroomDTO
 from src.mushrooms.models import Mushroom
 from src.mushrooms.db import MushroomStorage
 
-router = APIRouter(prefix='/mushrooms')
+router = APIRouter(prefix='/mushrooms', tags=['mushrooms'])
 
 
 @router.post(path='/', response_model=MushroomGettingSc)

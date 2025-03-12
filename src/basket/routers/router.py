@@ -9,7 +9,7 @@ from src.mushrooms.exceptions import MushroomDoesntExists
 from src.basket.db import BasketStorage
 
 
-router = APIRouter(prefix='/baskets')
+router = APIRouter(prefix='/baskets', tags=['baskets'])
 
 
 @router.post(path='/', response_model=BasketGettingSc)
